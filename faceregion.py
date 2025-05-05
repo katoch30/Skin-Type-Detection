@@ -48,7 +48,7 @@ class ImprovedCNN(nn.Module):
         return x
 
 model = ImprovedCNN(num_classes=3)
-model.load_state_dict(torch.load("best_model_fold_2.pth", map_location=torch.device('cpu')))
+model.load_state_dict(torch.load("best_model_fold_5.pth", map_location=torch.device('cpu')))
 model.eval()
 
 # --- Define Transform ---
